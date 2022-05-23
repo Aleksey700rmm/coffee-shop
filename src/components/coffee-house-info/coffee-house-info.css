@@ -1,0 +1,16 @@
+.house-info {
+    margin: 80px auto 100px auto;
+    width: 40%;
+    text-align: center;
+}
+
+.house-info-header {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.house-info-description {
+    font-size: 14px;
+    line-height: 20px;
+}
+

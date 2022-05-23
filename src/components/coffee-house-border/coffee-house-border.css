@@ -1,0 +1,29 @@
+.house-border-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.house-border-line {
+    border: 1px solid white;
+    width: 60px;
+    height: 0;
+}
+
+.house-border-icon {
+    background: url(../../img/header-icon.svg);
+    width: 29px;
+    height: 29px;
+    margin: 0 20px;
+}
+
+.house-border-line.black {
+    border: 1px solid black;
+    width: 60px;
+    height: 0;
+}
+
+.house-border-icon.icon-black {
+    background: url(../../img/icon-black.svg);
+}
