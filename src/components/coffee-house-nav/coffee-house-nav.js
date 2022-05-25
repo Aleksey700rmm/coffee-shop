@@ -1,14 +1,14 @@
 import { Component } from "react";
-import './coffee-house-nav.css';
+import "./coffee-house-nav.css";
 
 class HouseNav extends Component {
     render() {
-        let classNames = 'btn',
-            clazz = 'house-nav-icon';
-        
+        let classNames = "btn",
+            clazz = "house-nav-icon";
+
         if (this.props.black) {
-            classNames += ' black-nav';
-            clazz += ' black-nav-icon';
+            classNames += " black-nav";
+            clazz += " black-nav-icon";
         }
         return (
             <div className="house-nav">
@@ -23,7 +23,7 @@ class HouseNav extends Component {
                     For your pleasure
                 </button>
             </div>
-        )
+        );
     }
 }
 

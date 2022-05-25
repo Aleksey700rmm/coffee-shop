@@ -18,11 +18,11 @@
 }
 
 .house-nav-icon {
-    background: url(../../img/Vector.svg);
+    background: url(/public/img/Vector.svg);
     width: 35px;
     height: 35px;
 }
 
 .house-nav-icon.black-nav-icon {
-    background: url(../../img/nav-icon-black.svg);
+    background: url(/public/img/nav-icon-black.svg);
 }

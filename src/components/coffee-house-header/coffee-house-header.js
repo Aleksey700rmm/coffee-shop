@@ -8,11 +8,11 @@ class CoffeeHouseHeader extends Component {
         return (
             <div className="house-header">
                 <div className="house-header-nav">
-                    <HouseNav/>
+                    <HouseNav />
                 </div>
                 <div className="house-header-info">
                     <h1>Everything You Love About Coffee</h1>
-                    <HouseBorder/>
+                    <HouseBorder />
                     <p>We makes every day full of energy and taste</p>
                     <p>Want to try our beans?</p>
                     <button>More</button>

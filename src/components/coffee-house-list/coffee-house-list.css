@@ -1,5 +1,5 @@
 .house-list {
-    background: url(../../img/paper-background.png);
+    background: url(/public/img/paper-background.png);
     text-align: center;
     margin-bottom: 30px;
 }

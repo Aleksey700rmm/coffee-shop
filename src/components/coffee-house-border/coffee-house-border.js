@@ -1,14 +1,13 @@
-import { Component } from "react"
-import './coffee-house-border.css';
+import { Component } from "react";
+import "./coffee-house-border.css";
 
 class HouseBorder extends Component {
-
     render() {
-        let classNames = 'house-border-line';
-        let clazz = 'house-border-icon';
+        let classNames = "house-border-line";
+        let clazz = "house-border-icon";
         if (this.props.black) {
-            classNames += ' black';
-            clazz += ' icon-black';
+            classNames += " black";
+            clazz += " icon-black";
         }
 
         return (
@@ -17,7 +16,7 @@ class HouseBorder extends Component {
                 <span className={clazz}></span>
                 <div className={classNames}></div>
             </div>
-        )
+        );
     }
 }
 
