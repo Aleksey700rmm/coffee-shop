@@ -10,62 +10,101 @@ import HouseBorder from "../coffee-house-border/coffee-house-border";
 import './our-coffee.css';
 
 class OurCoffee extends Component {
-    render() {
-        
-        const cards = [
-            {
-                src: process.env.PUBLIC_URL + "/img/our-coffee-list-pic.png",
-                descr: "Solimo Coffee Beans 2 kg",
-                price: 10.73,
-                place: 'Brazil',
-                id: 1,
-            },
-            {
-                src: process.env.PUBLIC_URL + "/img/our-coffee-list-pic.png",
-                descr: "Solimo Coffee Beans 2 kg",
-                price: 10.73,
-                place: 'Brazil',
-                id: 2,
-            },
-            {
-                src: process.env.PUBLIC_URL + "/img/our-coffee-list-pic.png",
-                descr: "Solimo Coffee Beans 2 kg",
-                price: 10.73,
-                place: 'Brazil',
-                id: 3,
-            },
-            {
-                src: process.env.PUBLIC_URL + "/img/our-coffee-list-pic.png",
-                descr: "Solimo Coffee Beans 2 kg",
-                price: 10.73,
-                place: 'Brazil',
-                id: 4,
-            },
-            {
-                src: process.env.PUBLIC_URL + "/img/our-coffee-list-pic.png",
-                descr: "Solimo Coffee Beans 2 kg",
-                price: 10.73,
-                place: 'Brazil',
-                id: 5,
-            },
-            {
-                src: process.env.PUBLIC_URL + "/img/our-coffee-list-pic.png",
-                descr: "Solimo Coffee Beans 2 kg",
-                price: 10.73,
-                place: 'Brazil',
-                id: 6,
-            },
-        ];
+    constructor(props) {
+        super(props);
+        this.state = {
+            cards: [
+                {
+                    src: process.env.PUBLIC_URL + "/img/our-coffee-list-pic.png",
+                    descr: "Solimo Coffee Beans 2 kg",
+                    price: 10.73,
+                    place: 'Brazil',
+                    id: 1,
+                },
+                {
+                    src: process.env.PUBLIC_URL + "/img/our-best-presto.png",
+                    descr: "Presto Coffee Beans 1 kg",
+                    place: 'Kenya',
+                    price: 15.99,
+                    id: 2,
+                },
+                {
+                    src: process.env.PUBLIC_URL + "./img/our-best-aromisto.png",
+                    descr: "AROMISTICO Coffee 1 kg",
+                    place: 'Columbia',
+                    price: 6.99,
+                    id: 3,
+                },
+                {
+                    src: process.env.PUBLIC_URL + "/img/our-coffee-list-pic.png",
+                    descr: "Solimo Coffee Beans 2 kg",
+                    price: 10.73,
+                    place: 'Kenya',
+                    id: 4,
+                },
+                {
+                    src: process.env.PUBLIC_URL + "/img/our-best-presto.png",
+                    descr: "Presto Coffee Beans 1 kg",
+                    place: 'Brazil',
+                    price: 15.99,
+                    id: 5,
+                },
+                {
+                    src: process.env.PUBLIC_URL + "./img/our-best-aromisto.png",
+                    descr: "AROMISTICO Coffee 1 kg",
+                    place: 'Columbia',
+                    price: 6.99,
+                    id: 6,
+                },
+            ],
+            term: '',
+            filter: ''
+        }
+    }
 
+    searchCard = (items, term) => {
+        if (term.length === 0) {
+            return items;
+        }
+
+        return items.filter(item => {
+            return item.descr.indexOf(term) > -1
+        })
+    }
+
+    onUpdateSearch = (term) => {
+        this.setState({term});
+    }
+
+    filterPost = (items, filter) => {
+        switch (filter) {
+            case 'kenya':
+                return items.filter(item => item.place === 'Kenya');
+            case 'columbia':
+                return items.filter(item => item.place === 'Columbia');
+            case 'brazil':
+                return items.filter(item => item.place === 'Brazil');
+            default:
+                return items
+        }       
+    }
+
+    onFilterSelect = (filter) => {
+        this.setState({filter});
+    }
+
+    render() {
+        const {cards, term, filter} = this.state;
+        const visibleCards = this.filterPost(this.searchCard(cards, term), filter);
         return (
             <>
                 <CoffeeHeader/>
                 <CoffeeAbout/>
                 <div className="our-coffee-search">
-                    <CoffeeSearch/>
-                    <CoffeeFilter/>
+                    <CoffeeSearch onUpdateSearch={this.onUpdateSearch}/>
+                    <CoffeeFilter filter={filter} onFilterSelect={this.onFilterSelect}/>
                 </div>
-                <CoffeeList cards={cards}/>
+                <CoffeeList cards={visibleCards}/>
                 <div className="footer">
                     <HouseNav black />
                     <HouseBorder black />
