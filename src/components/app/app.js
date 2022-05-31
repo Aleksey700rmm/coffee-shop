@@ -4,7 +4,6 @@ import CoffeeHouseHeader from "../coffee-house-header/coffee-house-header";
 import HouseInfo from "../coffee-house-info/coffee-house-info";
 import HouseList from "../coffee-house-list/coffee-house-list";
 import HouseNav from "../coffee-house-nav/coffee-house-nav";
-import { Link } from "react-router-dom";
 import "./app.css";
 
 class App extends Component {
@@ -29,6 +28,7 @@ class App extends Component {
                 id: 3,
             },
         ];
+
         return (
             <div className="app">
                 <CoffeeHouseHeader />
@@ -38,8 +38,6 @@ class App extends Component {
                     <HouseNav black />
                     <HouseBorder black />
                 </div>
-                <Link to="/invoices">Invoices</Link>
-                <Link to="/expenses">Expenses</Link>
             </div>
         );
     }

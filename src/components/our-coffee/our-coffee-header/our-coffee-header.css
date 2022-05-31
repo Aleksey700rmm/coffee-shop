@@ -1,0 +1,18 @@
+.coffee-header {
+    background: url(/public/img/our-coffee-header.png);
+    height: 260px;
+}
+
+.coffee-header h1 {
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.coffee-header-nav {
+    padding-left: 148px;
+    padding-top: 30px;
+}
+

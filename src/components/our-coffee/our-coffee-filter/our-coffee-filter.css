@@ -1,0 +1,17 @@
+.coffee-filter {
+    margin-left: 83px;
+}
+
+.coffee-filter span {
+    margin-right: 35px;
+    font-size: 14px;
+}
+
+.coffee-filter-btn {
+    margin-right: 5px;
+    padding: 7px 20px 5px 20px;
+    font-family: "Merienda", cursive;
+    background-color: white;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-color: transparent;
+}

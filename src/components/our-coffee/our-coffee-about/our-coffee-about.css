@@ -1,0 +1,34 @@
+.coffee-about {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.coffee-about-left {
+    background: url(/public/img/our-coffee-about.jpg);
+    width: 270px;
+    height: 355px;
+    margin-right: 80px;
+}
+
+.coffee-about-right {
+    text-align: center;
+    width: 346px;
+}
+
+.coffee-about-headline {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.coffee-about-right p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.coffee-about-border {
+    border-bottom: 1px solid black;
+    width: 240px;
+    margin: 70px auto 0 auto;
+}

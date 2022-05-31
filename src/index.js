@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./components/app/app";
+import OurCoffee from "./components/our-coffee/our-coffee";
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -10,20 +11,12 @@ root.render(
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App />} />
-                <Route path="expenses" element={<Expenses />} />
+                <Route path="OurCoffee" element={<OurCoffee />} />
                 <Route path="invoices" element={<Invoices />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
 );
-
-function Expenses() {
-    return (
-        <main style={{ padding: "1rem 0" }}>
-            <h2>Expenses</h2>
-        </main>
-    );
-}
 
 function Invoices() {
     return (
