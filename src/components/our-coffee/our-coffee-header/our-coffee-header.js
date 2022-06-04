@@ -7,7 +7,7 @@ class CoffeeHeader extends Component {
         return (
             <div className="coffee-header">
                 <div className="coffee-header-nav">
-                    <HouseNav/>
+                    <HouseNav path={this.props.path}/>
                 </div>
                 <h1>Our Coffee</h1>
             </div>

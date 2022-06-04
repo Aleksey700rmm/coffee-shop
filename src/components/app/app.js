@@ -31,11 +31,11 @@ class App extends Component {
 
         return (
             <div className="app">
-                <CoffeeHouseHeader />
+                <CoffeeHouseHeader path={this.props.path}/>
                 <HouseInfo />
                 <HouseList data={data} />
                 <div className="footer">
-                    <HouseNav black />
+                    <HouseNav black path={this.props.path}/>
                     <HouseBorder black />
                 </div>
             </div>

@@ -6,10 +6,19 @@
     line-height: 17px;
     margin-right: 40px;
     font-family: "Merienda", cursive;
+    transition: color .3s ease-in-out;
+}
+
+.btn:hover {
+    color: #D2691E
 }
 
 .btn.black-nav {
     color: black;
+}
+
+.btn.black-nav:hover {
+    color: #D2691E
 }
 
 .house-nav {

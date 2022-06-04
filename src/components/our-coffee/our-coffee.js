@@ -98,7 +98,7 @@ class OurCoffee extends Component {
         const visibleCards = this.filterPost(this.searchCard(cards, term), filter);
         return (
             <>
-                <CoffeeHeader/>
+                <CoffeeHeader path={this.props.path}/>
                 <CoffeeAbout/>
                 <div className="our-coffee-search">
                     <CoffeeSearch onUpdateSearch={this.onUpdateSearch}/>
@@ -106,7 +106,7 @@ class OurCoffee extends Component {
                 </div>
                 <CoffeeList cards={visibleCards}/>
                 <div className="footer">
-                    <HouseNav black />
+                    <HouseNav black path={this.props.path}/>
                     <HouseBorder black />
                 </div>
             </>
