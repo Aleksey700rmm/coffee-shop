@@ -1,0 +1,17 @@
+.pleasure-header {   
+    background: url(/public/img/pleasure-header-pic.png);
+    height: 260px;    
+}
+
+.pleasure-header h1 {
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.pleasure-header-nav {
+    padding-left: 148px;
+    padding-top: 30px;
+}

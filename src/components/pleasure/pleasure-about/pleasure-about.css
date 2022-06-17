@@ -1,0 +1,34 @@
+.pleasure-about {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.pleasure-about-left {
+    background: url(/public/img/pleasure-about-pic.png);
+    width: 270px;
+    height: 355px;
+    margin-right: 80px;
+}
+
+.pleasure-about-right {
+    text-align: center;
+    width: 346px;
+}
+
+.pleasure-about-headline {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.pleasure-about-right p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.pleasure-about-border {
+    border-bottom: 1px solid black;
+    width: 240px;
+    margin: 70px auto 0 auto;
+}

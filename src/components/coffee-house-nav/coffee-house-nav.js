@@ -35,9 +35,9 @@ class HouseNav extends Component {
                     Our coffee
                 </button>
                 </Link>
-                <Link to="/ForYourPleasure">
+                <Link to="/Pleasure">
                 <button className={classNames} type="button"
-                style={this.props.path === 'invoices' ? {outline: '3px solid blue'} : undefined}
+                style={this.props.path === 'Pleasure' ? {outline: '3px solid #D2691E', borderRadius: 5} : undefined}
                 onClick={() => this.onNavClick(2)}>
                     For your pleasure
                 </button>
