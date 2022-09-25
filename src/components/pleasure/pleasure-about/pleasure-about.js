@@ -1,6 +1,6 @@
 import { Component } from "react";
 import HouseBorder from "../../coffee-house-border/coffee-house-border";
-import './pleasure-about.css';
+import "./pleasure-about.css";
 
 class PleasureAbout extends Component {
     render() {
@@ -27,7 +27,7 @@ class PleasureAbout extends Component {
                 </div>
                 <div className="pleasure-about-border"></div>
             </>
-        )
+        );
     }
 }
 

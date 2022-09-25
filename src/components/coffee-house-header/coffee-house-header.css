@@ -37,10 +37,10 @@
     line-height: 20px;
     color: #ffffff;
     border-radius: 3px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .house-header-info button:hover {
-    border-color: #D2691E;
-    color: #D2691E
+    border-color: #d2691e;
+    color: #d2691e;
 }
