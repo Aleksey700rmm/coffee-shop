@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./components/app/app";
 import OurCoffee from "./components/our-coffee/our-coffee";
 import Pleasure from "./components/pleasure/pleasure";
-import SingleCoffee from "./components/pages/single-coffee";
+import SingleCoffee from "./components/our-coffee/single-coffee/single-coffee";
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
